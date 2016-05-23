@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name       		LeekWars AdvancedTooltips V2
-// @version			0.5.0
+// @version			0.5.1
 // @author			yLark, asmodai27, artorias, amal
 // @description		Affiche une info-bulle au survol d'un lien pointant vers la page d'un poireau, d'un éleveur ou d'un rapport de combat
 // @downloadURL   https://github.com/k-artorias/LeekWars-AdvancedTooltips/raw/master/AdvancedTooltips.user.js
@@ -1152,7 +1152,7 @@ function fill_farmer(tooltip, target, $data) {
 	var avatar = document.createElement('div');
 	avatar.className = 'AT_avatar';
 	avatar.innerHTML = '<a title="Éleveur" href="https://leekwars.com/farmer/' + target.id
-		+ '"><img src="https://leekwars.com/static//image/avatar/' + $data.farmer.id + '"></a>';
+		+ '"><img src="https://leekwars.com/static/image/avatar/' + $data.farmer.id + '.png"></a>';
 	tooltip.appendChild(avatar);
 
 	// Ajout du nom de l'éleveur
